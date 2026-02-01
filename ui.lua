@@ -1,6 +1,7 @@
 spinThingy = nil
 spinPart = nil
 spinAttachment = nil
+_G.keybind = _G.keybind or "T"
 
 local plr = game:GetService("Players").LocalPlayer
 local plrgui = plr:WaitForChild("PlayerGui")
@@ -106,8 +107,6 @@ local LocalPlayer = Players.LocalPlayer
 local function getRoot(char)
     return char:WaitForChild("HumanoidRootPart")
 end
-
-_G.keybind = _G.keybind or "T"
 
 local function spin(n)
     local spinSpeed = n or 20
